@@ -2,7 +2,7 @@ from airflow import DAG
 import pendulum
 from airflow.operators.python import BranchPythonOperator, PythonOperator
 
-with DAG (
+with DAG(
     dag_id='dags_branch_python_operator',
     start_date=pendulum.datetime(2024, 2, 1, tz='Asia/Seoul'),
     schedule=None,
